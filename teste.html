@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 id="color-changing-text">Texto com Mudança de Cor</h2>
+  <script>
+    // Função para gerar uma cor aleatória em formato hexadecimal
+    function getRandomColor() {
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    // Função para mudar a cor do texto
+    function changeTextColor() {
+      var textElement = document.getElementById('color-changing-text');
+      textElement.style.color = getRandomColor();
+    }
+
+    // Mudar a cor do texto a cada 2 segundos (2000 milissegundos)
+    setInterval(changeTextColor, 500);
+  </script>
+</body>
+
+</html>

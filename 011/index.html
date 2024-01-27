@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>imagens adaptativas</title>
+  </head>
+  <body>
+    <h1>Imagens dinamicas</h1>
+    <p>Abra em dispostivos diferentes para ver o que acontece ou de zom</p>
+    <picture>
+      <source media="(max-width: 750px)" srcset="imgs/arduinoP.jpg" type="image/jpg" />
+      <source media="(max-width: 1050px)" srcset="imgs/arduinoM.jpg" type="image/jpg" />
+      <img src="imgs/arduinoG.jpg" alt="flex" />
+    </picture>
+  </body>
+</html>

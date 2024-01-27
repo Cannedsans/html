@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teste.rb</title>
+  <link rel="stylesheet" type="text/css" href="styles/firt.css">
+</head>
+<body>
+  <h1>Bem-vindo ao Exemplo Ruby e HTML!</h1>
+  <p id="valor-do-ruby">Valor do Ruby: <%= @meu_valor %></p>
+  
+  <% biometals = ["X", "Z", "H", "P", "L", "F", "O","W"] %>
+  <p><%= biometals.join(", ") %></p>
+
+  <form action="/form" method="post">
+
+    <label for="numero">Número:</label>
+    <input type="number" id="numero" name="numero" required>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
