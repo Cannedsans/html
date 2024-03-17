@@ -1,0 +1,25 @@
+*{
+    text-align: center;
+    color: aliceblue;
+}
+
+body{
+    background-image: linear-gradient(to left, black, red);
+}
+img{
+    border-radius: 50%;
+}
+main{
+    position: absolute;
+    left: 25%;
+    border-radius: 15px;
+    width: 50%;
+    background-color: #252525;
+}
+
+ul li{
+    text-align: left;
+}
+.t{
+    display: flex;
+}
